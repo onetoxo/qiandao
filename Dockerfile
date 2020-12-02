@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 RUN apk update \
     && apk add bash autoconf g++ \
     && pip install --no-cache-dir -r requirements.txt
-ENV PORT 80
+ENV PORT 1080
 EXPOSE $PORT/tcp
 # 添加挂载点
 VOLUME ["/usr/src/app/"]
